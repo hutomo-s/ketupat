@@ -1,5 +1,8 @@
 //import logo from './logo.svg';
 //import './App.css';
+import custsatisfaction from './customer-satisfaction.png'
+import quality from './shield.png'
+import values from './values.png'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -72,7 +75,7 @@ function App() {
                 Migrating painful insurance paperworks into a computerized system resulting in increasing productivity of marketing team to generate more revenue.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onClick={(e) => handleClick(e, "education")}>Explore More</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Connect</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" onClick={(e) => handleClick(e, "connect")}>Connect</button>
               </div>
             </div>
           </div>
@@ -127,16 +130,19 @@ function App() {
             <div class="col-md-9">
               <div className="row">
                 <div className="col-md-4">
+                  <img src={quality} class="img-fluid p-5" alt="Commitment to Quality" />
                   <h5>Commitment to Quality</h5>
                   <p>We are not creating a perfect software, but we will do our best to deliver high quality code that can be used for a long-term period.</p>
                 </div>
 
                 <div className="col-md-4">
+                  <img src={custsatisfaction} class="img-fluid p-5" alt="Customer Centric Approach" />
                   <h5>Customer Centric Approach</h5>
                   <p>Our strategy in developing software is to understand the needs, wants and pain points of the customer. We expect our target market can use our product to satisfy their need, want and pain.</p>
                 </div>
 
                 <div className="col-md-4">
+                  <img src={values} class="img-fluid p-5" alt="Focus on Business Value" />
                   <h5>Focus on Business Value</h5>
                   <p>Priority management is very important in every business. We collaborate with product and business team to prioritize on projects and tasks that bring the maximum value for your business.</p>
                 </div>
@@ -259,7 +265,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                           <h5>Front End</h5>
@@ -272,7 +278,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 mb-4">
                       <div class="card">
                         <div class="card-body">
                           <h5>Query Language</h5>
@@ -283,7 +289,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                           <h5>Database Engines</h5>
@@ -297,7 +303,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 mb-4">
                       <div class="card">
                         <div class="card-body">
                           <h5>Web Frameworks</h5>
@@ -311,7 +317,7 @@ function App() {
                       </div>
                     </div>
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                         <h5>Deployment</h5>
@@ -336,10 +342,37 @@ function App() {
 
         <div class="container col-xxl-8 px-4 py-5" id="portfolio">
           <div class="row g-5">
+            
             <div class="col-md-3">
               <h4>
                 <span style={spanStyle}>Portfolio</span>
               </h4>
+            </div>
+
+            <div className="col-md-9">
+                <h5>Premiro.com Web Platform</h5>
+                
+                <span className="d-block">Premiro.com has some platform services to support the business</span>
+                <span className="d-block mb-3"></span>
+
+                <ul class="icon-list">
+                  <li>Premiro Web in <a href="https://www.premiro.com" target="_blank">https://www.premiro.com</a></li>
+                  <li>Premiro Slim Dashboard for Back Office Service</li>
+                  <li>Premiro Slim API as Back End Services for Premiro Web (Internal) and External Partners</li>
+                </ul>
+
+                <div className="row mb-3"></div>
+
+                <h5>Abc App</h5>
+                
+                <span className="d-block">Lorem Ipsum</span>
+                <span className="d-block mb-3"></span>
+
+                <ul class="icon-list">
+                  <li>Abc App Live Demo <a href="#" target="_blank">#</a></li>
+                  <li>Abc App Github <a href="#" target="_blank">#</a></li>
+                </ul>
+
             </div>
           </div>
         </div>
@@ -355,6 +388,14 @@ function App() {
             </div>
           </div>
         </div>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="container">
+              <p>Personal Profile Template by <a href="https://instagram.com/hutomo.sugianto">Hutomo Sugianto</a>.</p>
+              <p>Icons created by <a href="https://www.flaticon.com/free-icons/" title="Icons" target="_blank">Freepik - Flaticon</a></p>
+            </div>
+        
+        </footer>
 
 
     </div>
