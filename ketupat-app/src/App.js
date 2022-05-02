@@ -371,7 +371,7 @@ function App() {
                 <span className="d-block mb-3"></span>
 
                 <ul class="icon-list">
-                  <li>Premiro Web in <a href="https://www.premiro.com" target="_blank">https://www.premiro.com</a></li>
+                  <li>Premiro Web in <a href="https://www.premiro.com" target="_blank" rel="noreferrer">https://www.premiro.com</a></li>
                   <li>Premiro Slim Dashboard for Back Office Service</li>
                   <li>Premiro Slim API as Back End Services for Premiro Web (Internal) and External Partners</li>
                 </ul>
@@ -384,8 +384,8 @@ function App() {
                 <span className="d-block mb-3"></span>
 
                 <ul class="icon-list">
-                  <li>Abc App Live Demo <a href="#" target="_blank">#</a></li>
-                  <li>Abc App Github <a href="#" target="_blank">#</a></li>
+                  <li>Abc App Live Demo <a href="#" target="_blank" rel="noreferrer">#</a></li>
+                  <li>Abc App Github <a href="#" target="_blank" rel="noreferrer">#</a></li>
                 </ul>
 
             </div>
@@ -408,9 +408,9 @@ function App() {
               <p>Keep in touch for further collaboration</p>
               
               <ul class="icon-list">
-                <li>LinkedIn <a href="https://www.linkedin.com/in/hutomo-sugianto-763414107/" target="_blank">Hutomo Sugianto</a></li>
-                <li>Instagram <a href="https://instagram.com/hutomo.sugianto" target="_blank">@hutomo.sugianto</a></li>
-                <li>Medium <a href="https://medium.com/@hutomo_s" target="_blank">@hutomo_s</a></li>
+                <li>LinkedIn <a href="https://www.linkedin.com/in/hutomo-sugianto-763414107/" target="_blank" rel="noreferrer">Hutomo Sugianto</a></li>
+                <li>Instagram <a href="https://instagram.com/hutomo.sugianto" target="_blank" rel="noreferrer">@hutomo.sugianto</a></li>
+                <li>Medium <a href="https://medium.com/@hutomo_s" target="_blank" rel="noreferrer">@hutomo_s</a></li>
               </ul>
 
             </div>
@@ -420,8 +420,8 @@ function App() {
         {/* footer section */}
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="container">
-              <p>Personal Profile Template by <a href="https://instagram.com/hutomo.sugianto">Hutomo Sugianto</a></p>
-              <p>Icons created by <a href="https://www.flaticon.com/" title="Icons" target="_blank">Freepik - Flaticon</a></p>
+              <p>Personal Profile Template by <a href="https://instagram.com/hutomo.sugianto" target="_blank" rel="noreferrer">Hutomo Sugianto</a></p>
+              <p>Icons created by <a href="https://www.flaticon.com/" title="Icons" target="_blank" rel="noreferrer">Freepik - Flaticon</a></p>
             </div>
         
         </footer>
