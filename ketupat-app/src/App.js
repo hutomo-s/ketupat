@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 //import './App.css';
+import { useState } from 'react';
 import custsatisfaction from './customer-satisfaction.png'
 import quality from './shield.png'
 import values from './values.png'
@@ -8,6 +9,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function App() {
 
+  // reference: https://johnotu.medium.com/how-to-toggle-bootstrap-navbar-collapse-button-in-react-without-jquery-1d5c2fb0751c
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   const handleClick = (e, sectionId) => {
     e.preventDefault();
 
@@ -15,6 +21,10 @@ function App() {
 
     let element = document.getElementById(sectionId);
     element && element.scrollIntoView({ behavior: "smooth", block: "start"});
+
+    // collapse the navbar
+    // short circuit operator
+    isNavCollapsed === true || setIsNavCollapsed(true)
   };
 
   // https://nordicgiant2.github.io/react-nice-resume-page/index.html#about
@@ -34,10 +44,10 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" style={navStyle}>
           <div class="container-fluid container">
             <a class="navbar-brand" href="">Hutomo Sugianto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavCollapse}>
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto me-auto- mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link text-body" aria-current="page" onClick={(e) => handleClick(e, "about")} href="#" href="#">About</a>
@@ -62,6 +72,7 @@ function App() {
           </div>
         </nav>
 
+        {/* jumbotron section */}
         <div class="container col-xxl-8 px-4 py-5" id="about">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
@@ -81,6 +92,7 @@ function App() {
           </div>
         </div>
 
+        {/* education section */}
         <div class="container col-xxl-8 px-4 py-5" id="education">
           <div class="row g-5">
             <div class="col-md-3">
@@ -119,6 +131,7 @@ function App() {
 
         <hr className="col-6 container" />
 
+        {/* core values section */}
         <div class="container col-xxl-8 px-4 py-5" id="corevalues">
           <div class="row g-5">
             <div class="col-md-3">
@@ -241,6 +254,7 @@ function App() {
 
         <hr className="col-6 container" />
 
+        {/* skills section */}
         <div class="container col-xxl-8 px-4 py-5" id="skills">
           <div class="row g-5">
             <div class="col-md-3">
@@ -340,6 +354,7 @@ function App() {
 
         <hr className="col-6 container" />
 
+        {/* portfolio section */}
         <div class="container col-xxl-8 px-4 py-5" id="portfolio">
           <div class="row g-5">
             
@@ -379,6 +394,7 @@ function App() {
 
         <hr className="col-6 container" />
 
+        {/* connect section */}
         <div class="container col-xxl-8 px-4 py-5" id="connect">
           <div class="row g-5">
             <div class="col-md-3">
@@ -386,13 +402,26 @@ function App() {
                 <span style={spanStyle}>Connect with Me</span>
               </h4>
             </div>
+
+            <div class="col-md-9">
+              <h5>I'm happy to connect with you :)</h5>
+              <p>Keep in touch for further collaboration</p>
+              
+              <ul class="icon-list">
+                <li>LinkedIn <a href="https://www.linkedin.com/in/hutomo-sugianto-763414107/" target="_blank">Hutomo Sugianto</a></li>
+                <li>Instagram <a href="https://instagram.com/hutomo.sugianto" target="_blank">@hutomo.sugianto</a></li>
+                <li>Medium <a href="https://medium.com/@hutomo_s" target="_blank">@hutomo_s</a></li>
+              </ul>
+
+            </div>
           </div>
         </div>
 
+        {/* footer section */}
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="container">
-              <p>Personal Profile Template by <a href="https://instagram.com/hutomo.sugianto">Hutomo Sugianto</a>.</p>
-              <p>Icons created by <a href="https://www.flaticon.com/free-icons/" title="Icons" target="_blank">Freepik - Flaticon</a></p>
+              <p>Personal Profile Template by <a href="https://instagram.com/hutomo.sugianto">Hutomo Sugianto</a></p>
+              <p>Icons created by <a href="https://www.flaticon.com/" title="Icons" target="_blank">Freepik - Flaticon</a></p>
             </div>
         
         </footer>
