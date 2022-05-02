@@ -37,22 +37,22 @@ function App() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto me-auto- mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" onClick={(e) => handleClick(e, "about")} href="#" href="#">About</a>
+                  <a class="nav-link text-body" aria-current="page" onClick={(e) => handleClick(e, "about")} href="#" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick={(e) => handleClick(e, "education")} href="#">Education</a>
+                  <a class="nav-link text-body" onClick={(e) => handleClick(e, "education")} href="#">Education</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick={(e) => handleClick(e, "experience")} href="#">Experience</a>
+                  <a class="nav-link text-body" onClick={(e) => handleClick(e, "experience")} href="#">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick={(e) => handleClick(e, "skills")} href="#">Skills</a>
+                  <a class="nav-link text-body" onClick={(e) => handleClick(e, "skills")} href="#">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick={(e) => handleClick(e, "portfolio")} href="#">Portfolio</a>
+                  <a class="nav-link text-body" onClick={(e) => handleClick(e, "portfolio")} href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Connect</a>
+                  <a class="nav-link text-body" onClick={(e) => handleClick(e, "connect")} href="#">Connect</a>
                 </li>
               </ul>
             </div>
